@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://i.imgur.com/gODA7sR.gif?noredirect");
+    /* background-image: url("https://i.imgur.com/gODA7sR.gif?noredirect"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #F7F9F9;
@@ -7,7 +7,7 @@ body {
     /* text-align: center; */
 }
 
-/* Add a blue background color to the top navigation */
+/* Skapar en blå bakgrund för top navigationen */
 .topnav {
   background-color: #0090FF;
   color: white;
