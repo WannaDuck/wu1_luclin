@@ -18,42 +18,29 @@ h1 {
     padding: 25px;
 }
 
-h2 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-h3 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-h4 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-h5 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-h6 {
+h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
 p {
+    font-size: 20px;
     margin: 10px;
     padding: 10px;
 }
 
 /* Skapar en blå bakgrund för top navigationen */
-.topnav {
+#topnav {
   background-color: #0090FF;
   color: white;
   overflow: hidden;
+  z-index: 10;
 }
 
 /* Stylar länkarna inanför navigations fönstret */
-.topnav a {
+#topnav a {
   float: left;
   color: #f2f2f2;
+  display: block;
   background-color: inherit;
   text-align: center;
   padding: 14px 16px;
@@ -62,15 +49,30 @@ p {
 }
 
 /* Ändrar färgen på länkarna när man hovrar med musen över dem */
-.topnav a:hover {
+#topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
 /* Sätter en färg på den länken som är aktiv */
-.topnav a.active {
+#topnav a.active {
   background-color: #00B4FF;
   color: white;
+}
+
+.content {
+    padding: 46px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.sticky + .content {
+    padding-top: 60px;
 }
 
 iframe {

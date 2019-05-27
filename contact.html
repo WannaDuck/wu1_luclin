@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-    <head>
-        <!-- PLEASE DON'T TOUCH -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Contact</title>
-        <!-- STYLING -->
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- Lukke boys CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/master.css">
+<head>
+    <!-- PLEASE DON'T TOUCH -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact</title>
+    <!-- STYLING -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Lukke boys CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/master.css">
 
-        <!-- Custom CSS -->
+    <!-- Custom CSS -->
 
-        <!-- Fonts -->
-        <style>@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
-        </style>
-    </head>
-    <body>
-        <div class="topnav">
-            <a href="./index.html">Home</a>
-            <a href="./tasks.html">Tasks</a>
-            <a class="active" href="./contact.html">Contact</a>
-            <a href="./about.html">About</a>
-        </div>
-        <br>
-        <h2>Got any questions or critique? Ask away!</h2>
-        <div class="move">
-        <form class="" action="contact.html" method="post">
+    <!-- Fonts -->
+    <style>@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+    </style>
+</head>
+<body>
+    <div class="sticky">
+    <div id="topnav">
+        <a href="./index.html">Home</a>
+        <a href="./tasks.html">Tasks</a>
+        <a class="active" href="./contact.html">Contact</a>
+        <a href="./about.html">About</a>
+    </div>
+</div>
+    <div class="content">
+    <br>
+    <h2>Got any questions or critique? Ask away!</h2>
+    <div class="move">
+        <form name="contactform" method="post" onsubmit="submitted()">
             First name:<br>
             <input type="text" name="firstname"> <br>
             Last name:<br>
             <input type="text" name="lastname"> <br>
+            Email:<br>
+            <input type="text" name="email"> <br>
             Question: <br>
-            <textarea name="question" rows="8" cols="80" style="max-width: 600px; max-height: 400px"></textarea>
+            <textarea name="question" rows="8" cols="80" maxlength="1000"></textarea>
             <br><br>
-            <input type="submit" value="Submit">
+
+            <button type="submit">Submit</button>
         </form>
     </div>
-    </body>
+    </div>
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/javascript.js">
+    </script>
+</body>
 </html>
